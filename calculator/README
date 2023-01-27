@@ -1,0 +1,17 @@
+# Basic Calculator
+
+A basic CLI calculator that supports the operators: 
+ * Add: "+"
+ * Subract: "-"
+ * Multiply: "x"
+ * Divide: "/"
+
+### Useage
+```
+cargo run -- calc --x <float> --y <float> --op <operator>
+```
+
+### Unit Tests
+```
+make test
+```
