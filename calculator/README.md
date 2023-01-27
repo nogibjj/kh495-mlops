@@ -8,10 +8,11 @@ A basic CLI calculator that supports the operators:
 
 ### Useage
 ```
-cargo run -- calc --x <float> --y <float> --op <operator>
+$ cd calculator
+$ cargo run -- calc --x <float> --y <float> --op <operator>
 ```
 
 ### Unit Tests
 ```
-make test
+$ make test
 ```
