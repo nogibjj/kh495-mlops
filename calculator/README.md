@@ -9,7 +9,8 @@ A basic CLI calculator that supports the operators:
 ### Useage
 ```
 $ cd calculator
-$ cargo run -- calc --x <float> --y <float> --op <operator>
+$ cargo run calc --a <float> --b <float> --op <operator>
+# ex. cargo run calc --a 3 --b 5 --op x
 ```
 
 ### Unit Tests

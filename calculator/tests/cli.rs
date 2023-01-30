@@ -5,9 +5,9 @@ use assert_cmd::Command;
 fn test_add() {
     let mut cmd = Command::cargo_bin("calculator").unwrap();
     cmd.arg("calc")
-        .arg("--x")
+        .arg("--a")
         .arg("5")
-        .arg("--y")
+        .arg("--b")
         .arg("3")
         .arg("--op")
         .arg("+");
@@ -19,9 +19,9 @@ fn test_add() {
 fn test_subtract() {
     let mut cmd = Command::cargo_bin("calculator").unwrap();
     cmd.arg("calc")
-        .arg("--x")
+        .arg("--a")
         .arg("5")
-        .arg("--y")
+        .arg("--b")
         .arg("3")
         .arg("--op")
         .arg("-");
@@ -33,9 +33,9 @@ fn test_subtract() {
 fn test_divide() {
     let mut cmd = Command::cargo_bin("calculator").unwrap();
     cmd.arg("calc")
-        .arg("--x")
+        .arg("--a")
         .arg("5")
-        .arg("--y")
+        .arg("--b")
         .arg("3")
         .arg("--op")
         .arg("/");
@@ -47,9 +47,9 @@ fn test_divide() {
 fn test_multiply() {
     let mut cmd = Command::cargo_bin("calculator").unwrap();
     cmd.arg("calc")
-        .arg("--x")
+        .arg("--a")
         .arg("5")
-        .arg("--y")
+        .arg("--b")
         .arg("3")
         .arg("--op")
         .arg("x");

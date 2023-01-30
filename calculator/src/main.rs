@@ -13,9 +13,9 @@ enum Commands {
     #[clap(version = "1.0", author = "Kahlia Hogg")]
     Calc {
         #[clap(short, long)]
-        x: f64,
+        a: f64,
         #[clap(short, long)]
-        y: f64,
+        b: f64,
         #[clap(short, long)]
         op: String,
     },
@@ -24,17 +24,13 @@ enum Commands {
 fn main() {
     let args = Cli::parse();
     match args.command {
-        Some(Commands::Calc { x, y, op }) => {
-            if op == "+" {
-                println!("Result: {:.2}", calculator::add(x, y));
-            } else if op == "-" {
-                println!("Result: {:.2}", calculator::subtract(x, y));
-            } else if op == "/" {
-                println!("Result: {:.2}", calculator::divide(x, y));
-            } else if op == "x" {
-                println!("Result: {:.2}", calculator::multiply(x, y));
-            } else {
-                println!("Invalid operator");
+        Some(Commands::Calc { a, b, op }) => {
+            match op.as_str() {
+                "+" => println!("Result: {:.2}", calculator::add(a,b)),
+                "-" => println!("Result: {:.2}", calculator::subtract(a,b)),
+                "x" => println!("Result: {:.2}", calculator::multiply(a,b)),
+                "/" => println!("Result: {:.2}", calculator::divide(a,b)),
+                _ => println!("Invalid operation"),
             }
         }
         None => println!("No command given"),
