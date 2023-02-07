@@ -1,6 +1,11 @@
 # Rust MLOps
 
-Weekly Rust Projects for IDS721 Spring 2023
+Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded](https://github.com/athletedecoded)
+## Individual Projects
+
+**Project 1:** [AWS S3 CLI Tool in Rust](https://github.com/athletedecoded/rust-s3-cli)
+
+## Weekly Projects
 
 | Week  | Project                            | What I learnt                         |
 |:---:  |:-------------:                      |:----:                                 |
