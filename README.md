@@ -11,3 +11,4 @@ Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded]
 |:---:  |:-------------:                      |:----:                                 |
 | 2     | [Basic Calculator](./calculator)   | Unit testing and command-line parsing |
 | 3     | [World Clock](./worldclock)   | AWS Lambda configuration and deployment |
+| 4     | [Rustfolio](https://github.com/athletedecoded/rustfolio)   | Rust + Github Actions for CI/CD |
