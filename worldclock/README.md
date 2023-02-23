@@ -42,6 +42,11 @@ $ pip3 install cargo-lambda
 $ source ~/.venv/bin/activate
 ```
 
+**Open project dir**
+```
+$ cd worldclock
+```
+
 **Build Binary**
 
 *For x86_64*
