@@ -16,7 +16,7 @@ use tensorflow::DEFAULT_SERVING_SIGNATURE_DEF_KEY;
 use tensorflow::eager::{self, raw_ops, ToTensorHandle};
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let export_dir = "./outputs/";
+    let export_dir = "./models/";
     let model_file: PathBuf = [export_dir, "saved_model.pb"].iter().collect();
     if !model_file.exists() {
         return Err(Box::new(
@@ -37,7 +37,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let ctx = eager::Context::new(opts)?;
 
     // Load an input image.
-    let fname = "./img/sample.png".to_handle(&ctx)?;
+    let fname = "./models/sample.png".to_handle(&ctx)?;
     let buf = raw_ops::read_file(&ctx, &fname)?;
     let img = raw_ops::decode_image(&ctx, &buf)?;
     let cast2float = raw_ops::Cast::new().DstT(tensorflow::DataType::Float);
@@ -85,9 +85,9 @@ fn main() -> Result<(), Box<dyn Error>> {
                 }
             });
 
-    // This index is expected to be identical with that of the Python code,
-    // but this is not guaranteed due to floating operations.
-    println!("argmax={}", max_idx);
+    // Get label of max_idx
+    let label = tf_rust::get_label(&max_idx.to_string());
+    println!("Prediction = {}: {}", max_idx, label);
 
     Ok(())
 }
