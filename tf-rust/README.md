@@ -4,6 +4,11 @@ Adapting the [Tensorflow Rust example](https://github.com/tensorflow/rust/tree/m
 
 ## Useage
 
+**Load image dataset**
+
+Upload your images to tf-rust/img
+
+
 **Load model and preprocess images**
 
 Note this will print python based model predictions to CLI

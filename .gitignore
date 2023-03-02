@@ -19,3 +19,8 @@ Cargo.lock
 
 #ignore the diffusers project (large data)
 diffusers-rs
+
+#ignore TF model files
+tf-rust/models/
+*.pb
+

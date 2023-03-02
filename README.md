@@ -4,6 +4,7 @@ Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded]
 ## Individual Projects
 
 **Project 1:** [AWS S3 CLI Tool in Rust](https://github.com/athletedecoded/rust-s3-cli)
+
 **Project 2:** [HuggingFace Rust API Proxy](https://github.com/athletedecoded/hf-micro)
 
 ## Weekly Projects

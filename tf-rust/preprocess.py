@@ -1,5 +1,8 @@
 import tensorflow as tf
 
+# make models/inputs directory if not exists
+tf.io.gfile.makedirs("./models/inputs")
+
 # default input shape 224x224x3
 model = tf.keras.applications.MobileNetV3Small(
     input_shape=(224, 224, 3), weights="imagenet"
