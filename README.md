@@ -16,3 +16,4 @@ Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded]
 | 4     | [Rustfolio](https://github.com/athletedecoded/rustfolio)   | Rust + Github Actions for CI/CD |
 | 5     | [Parallel Rust](./parallel)   | Rayon and multithreading |
 | 6     | [Tensorflow Image Classifier](./tf-rust)   | TF bindings for Rust |
+| 7     | [Wasm Web App](./wasm)   | Wasm bindings for Rust web apps |

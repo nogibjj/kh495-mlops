@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello There</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- wasm modules -->
+    <link rel="preload" href="./index.js" as="script" />
+
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left">
+                    <li>
+                        <a href="./" class="brand-logo" style="height: 100%;">
+                            <i id="logo" class="far fa-futbol fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+                
+    </header>
+
+    <main>
+
+        <div class="container center-align">
+			<h1 class="title">Hello There!</h1>
+			<h3 id="visitorCounter"></h3>
+			
+			<div class="row">
+                <div class="col s12 offset-l4 l4 center-align">
+					<div class="card">
+					  <div class="card-image waves-effect waves-block waves-light">
+						<img  id="queryBoot" class="activator" src="assets/images/q.jpg">
+					  </div>
+					</div>
+				</div>
+			</div>
+      </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+          <div class="row valign-wrapper">
+              <div class="col l6 s12">
+                  <span><a href="https://www.linkedin.com/in/kahliahogg" target="_blank"><img class="footer-links" src="assets/images/linkedin.png"></a></span>
+                  <span><a href="https://github.com/athletedecoded" target="_blank"><img class="footer-links" src="assets/images/git-logo.svg"></a></span>
+                  <span><a href="https://athletedecoded.com" target="_blank"><img class="footer-links" src="assets/images/web.jpg"></a></span>
+              </div>
+
+              <div class="col l6 s12">
+                  <div class="right-align"> © 2022 Copyright Kahlia Hogg</div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <!-- wasm modules -->
+    <script type="module" src="./index.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="assets/js/env.js"></script>
+
+</body>
+
+</html>
