@@ -24,9 +24,33 @@
     ]
 }
 ```
-2. Create your ~/.aws/credentials file with environment variables: `aws_access_key_id`, `aws_secret_access_key`, `aws_role_arn`. 
+2. With above User policy, set your ~/.aws/credentials file with environment variables: `aws_access_key_id`, `aws_secret_access_key`, `aws_role_arn`. 
 
 *Note: `aws_role_arn` is copied from the IAM user summary and is formatted as arn:aws:iam::<aws_acct>:user/<iam_user>*
+
+**Lambda role with basic execution +**
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:CreateNetworkInterface",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DescribeInstances",
+        "ec2:AttachNetworkInterface"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+**Configure EFS**
+1. From AWS console, provision EFS instance
+2. Add access point `/mnt/efs` to above EFS
 
 **Install Cargo Lambda into Virtual Env**
 
@@ -46,3 +70,22 @@ $ make release
 ```
 $ make deploy
 ```
+
+**Deploy fxn + add VPC + filesystem**
+
+**Ec2 modify security group rules**
+
+
+```
+
+# Install efs-ultils (https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html)
+sudo yum install -y amazon-efs-utils
+
+# Mount efs to ec2 (https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-ec2-linux.html)
+sudo mkdir efs
+```
+
+
+
+## References
+* [AWS EFS + Lambda Guide](https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications/)
