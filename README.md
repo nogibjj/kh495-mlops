@@ -8,6 +8,8 @@ Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded]
 
 **Project 2:** [HuggingFace Rust API Proxy](https://github.com/athletedecoded/hf-micro)
 
+**Project 3:** [Automated Serverless S3 Backup](https://github.com/athletedecoded/s3-backup)
+
 ## Weekly Projects
 
 | Week  | Project                            | What I learnt                         |
@@ -19,3 +21,4 @@ Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded]
 | 6     | [Tensorflow Image Classifier](./tf-rust)   | TF bindings for Rust |
 | 7     | [Wasm Web App](./wasm)   | Wasm bindings for Rust web apps |
 | 8     | [Image Augmentation](./img-aug)   | Image augmentations for CV |
+| 9     | [Distroless HF Micro](https://github.com/athletedecoded/rustfolio)   | Distroless Azure Containers with Rust |

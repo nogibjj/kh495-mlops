@@ -75,6 +75,8 @@ $ make deploy
 
 **Ec2 modify security group rules**
 
+**Create Cloud9 Instance and set EC2 security group to one from above**
+
 
 ```
 
@@ -83,6 +85,9 @@ sudo yum install -y amazon-efs-utils
 
 # Mount efs to ec2 (https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-ec2-linux.html)
 sudo mkdir efs
+
+# From EFS "Attach" copy EFS helper command
+sudo mount -t efs -o tls <AWS_FS_ID>:/ efs
 ```
 
 
