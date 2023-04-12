@@ -23,3 +23,4 @@ Project Portfolio for IDS721 Spring 2023 at Duke University by [@athletedecoded]
 | 8     | [Image Augmentation](./img-aug)   | Image augmentations for CV |
 | 9     | [Distroless HF Micro](https://github.com/athletedecoded/rustfolio)   | Distroless Azure Containers with Rust |
 | 10     | [Onnx x EFS x Lambda](./onnx-aws)   | AWS Lambda x EFS x Onnx pipeline config|
+| 11     | [MNIST CNN Training](./ml)   | tch bindings for ML training on MNIST|

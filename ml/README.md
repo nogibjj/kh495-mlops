@@ -6,6 +6,6 @@ Runs training on basic CNN classifier for MNIST dataset
 ## Useage
 
 ```
-$ cd img-aug
+$ make install
 $ make run
 ```
